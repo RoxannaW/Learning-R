@@ -4,6 +4,10 @@
 data("mtcars")
 head(mtcars)
 
+
+install.packages("tidyverse")
+library(tidyverse)
+
 # limpio los datos
 datos_limpios <- mtcars %>%
   filter(cyl == 4)
@@ -11,5 +15,3 @@ datos_limpios <- mtcars %>%
 # grafico los datos
 plot(x = mtcars$wt, y = mtcars$mpg)
 
-library(tidyverse)
-install.packages("tidyverse")
