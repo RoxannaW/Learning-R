@@ -103,4 +103,22 @@ mi_cancion()
 # Crea una funcion llamada otra_cancion que genere la letra de esta otra cancion:
 # https://es.wikipedia.org/wiki/99_Bottles_of_Beer
  
+otra_cancion <- function() {
+  n_bottles <- 99L
+  
+  while (n_bottles != 0) {
+    
+    cat(n_bottles, "bottles of beer on the wall, ", n_bottles,  "bottles of beer.
+  Take one down, pass around you, ", (n_bottles - 1),  "bottles of beer on the wall ...", "\n")
+    
+    n_bottles <- n_bottles - 1
+    
+  }
+  
+  cat("No more beer bottles on the wall, no more beer bottles. 
+Go to the store and buy some more, 99 bottles of beer on the wall ...")
+  
+  
+}
 
+otra_cancion()
