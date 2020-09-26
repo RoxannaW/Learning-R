@@ -17,7 +17,7 @@ func_sheep <- function(path, to_filter=FALSE){
     ggplot(aes(x=bodywt)) + 
       geom_histogram()
     ###plot does not work?
-                          }
+  }
   
   }
 
